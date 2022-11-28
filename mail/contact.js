@@ -8,7 +8,6 @@ $(function () {
             event.preventDefault();
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var subject = $("input#subject").val();
             var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
@@ -20,7 +19,6 @@ $(function () {
                 data: {
                     name: name,
                     email: email,
-                    subject: subject,
                     message: message
                 },
                 cache: false,
